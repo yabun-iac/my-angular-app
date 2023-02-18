@@ -35,6 +35,6 @@ jobs:
         uses:  pulumi/actions@v3
         with:
           command: up
-          stack-name: dev
+          stack-name: yabin/gcp-ts-cloudrun/dev
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_TOKEN }}
