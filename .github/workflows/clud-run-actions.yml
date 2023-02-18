@@ -30,11 +30,12 @@ jobs:
       - name: "setup GCP"
         uses: "google-github-actions/setup-gcloud@v1"
 
+      
       # pulumi
       - name: "exec pulumi"
         uses:  pulumi/actions@v3
         with:
           command: up
-          stack-name: yabin/gcp-ts-cloudrun/dev
+          stack-name: dev
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_TOKEN }}
