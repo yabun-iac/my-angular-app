@@ -34,7 +34,9 @@ jobs:
       - name: "setup GCP"
         uses: "google-github-actions/setup-gcloud@v1"
 
-      
+      - name: "run ls"
+        run: ls
+
       # pulumi
       - name: "exec pulumi"
         uses:  pulumi/actions@v3
