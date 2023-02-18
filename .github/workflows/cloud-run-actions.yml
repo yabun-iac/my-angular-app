@@ -47,6 +47,7 @@ jobs:
           pulumi login
           pulumi up -s dev -y
 
+      
       #- name: "exec pulumi"
       #  uses:  pulumi/actions@v3
       #  with:
