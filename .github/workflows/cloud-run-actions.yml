@@ -34,6 +34,10 @@ jobs:
       - name: "setup GCP"
         uses: "google-github-actions/setup-gcloud@v1"
 
+      # configure gcr.io
+      - name: "configure gcr.io"
+        run: gcloud auth configure-docker gcr.io
+
 
       # pulumi
       - name: "exec pulumi"
