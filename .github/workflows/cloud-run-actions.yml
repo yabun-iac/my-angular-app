@@ -39,7 +39,7 @@ jobs:
       - name: "exec pulumi"
         run: |
           curl -fsSL https://get.pulumi.com | sh
-          export PULUMI_ACCESS_TOEN=${{secrets.PULUMI_TOKEN}}
+          export PULUMI_ACCESS_TOKEN=${{secrets.PULUMI_TOKEN}}
           pulumi login
           pulumi up -s dev -y
 
