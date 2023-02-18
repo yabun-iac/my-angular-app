@@ -17,7 +17,7 @@ const imageName = "angular-app";
 const myImage = new docker.Image(imageName, {
     imageName: pulumi.interpolate`gcr.io/${gcp.config.project}/${imageName}:v1.0.0`,
     build: {
-        context: "../my-angular-app",
+        context: "../../my-angular-app",
     },
 });
 
