@@ -39,6 +39,7 @@ const angularService = new gcp.cloudrun.Service("angular", {
     },
 });
 
+
 // Open the service to public unrestricted access
 const iamAngular = new gcp.cloudrun.IamMember("angular-everyone", {
     service: angularService.name,
